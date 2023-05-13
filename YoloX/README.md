@@ -62,4 +62,3 @@ It seems that as the models get larger the gain in AP decreases until it reaches
 It is also worth noting that the newest models of Yolo ( [YoloV7](https://github.com/WongKinYiu/yolov7#performance) ) already beats YoloX in both performance and accuracy.
 
 However this does not take away the fact that anchor-free training is a powerful advantage for YoloX that saves training time as well as provide a decent gain over YoloV3 and YoloV5 especially in smaller model versions of YOLO.
-
