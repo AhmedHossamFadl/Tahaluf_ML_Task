@@ -44,7 +44,7 @@ python -m yolox.tools.eval -n  yolox-l -c /path/to/your/model/weights/yolox_l.pt
 ```
 
 Assuming everything runs smoothly the output should be something like this 
-![Output](./Output.png)
+![Output](./misc/Output.png)
 
 These results matches the [results mentioned in the original repo of YoloX](https://github.com/Megvii-BaseDetection/YOLOX#standard-models) for the YoloX-L version of the model
 
@@ -55,7 +55,7 @@ These results matches the [results mentioned in the original repo of YoloX](http
 The main point of strength for YoloX over it's predecessors is the fact that it's anchor-free meaning there is no need to pre-define anchor boxes before training, this makes it much easier to re-train/adapt the models on different domains and datasets without having to study the data to determine the suitable anchor boxes that will yield the best result. 
 
 While YoloX does infact provide better results than it's predecessors taking a look at this result table from the paper 
-![YoloX_VS_YoloV5](./YoloX_VS_YoloV5.png)
+![YoloX_VS_YoloV5](./misc/YoloX_VS_YoloV5.png)
 
 It seems that as the models get larger the gain in AP decreases until it reaches less than 1%, while the latency, model size and computations required are higher than it's predecessors at all model versions.
 
