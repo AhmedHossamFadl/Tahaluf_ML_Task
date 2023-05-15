@@ -34,7 +34,7 @@ This results in `4182` for Train `466` for Validation and `518` for Test.
 
 After preparing the data I train a classifer using the ResNet18 architecture with pre-trained weights, I use balanced cross entropy loss with the weights calculated during the data preperation step using sk-learn's `compute_class_weight` function, for the optimizer I use a standard SGD optimizer with `lr = 0.005` and `momentum = 0.9` the training goes for `50` epoch with a batch size of `32`.
 
-I tried using ResNet18 from scratch as well as freezing the pre-trained weights and only training the final layer but training full network starting with the pre-trained weights ultimately proved to be best for this problem.
+I tried using ResNet18 from scratch as well as freezing the pre-trained weights and only training the final layer, however training full network starting with the pre-trained weights ultimately proved to be best for this problem.
 
 While training after each epoch I inference the model using the validation set and weights with the best accuracy for the validation set is saved as well as the final weights after all epochs.
 
